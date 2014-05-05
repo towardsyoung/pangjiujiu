@@ -1,0 +1,22 @@
+a, a:hover,.topbar-right ul li a:hover, .accordion h4.ui-state-active, .toggle .active{
+	color: #b60000;
+}
+
+#main-menu-wrapper, #main-menu li.current_page_item a, #main-menu li a:hover, #main-menu li.sfHover a, #main-menu a:focus, #main-menu a:hover, #main-menu a:active, #main-menu li ul, blockquote, .page-content table, .ui-tabs .ui-tabs-nav li.ui-tabs-selected, #footer {
+	border-color: #b60000;
+}
+
+#twitter_icon:hover, #facebook_icon:hover, #googleplus_icon:hover, #skype_icon:hover, #flickr_icon:hover, #linkedin_icon:hover, #vimeo_icon:hover, #youtube_icon:hover, #rss_icon:hover {
+	background-color: #b60000;
+}
+
+.tag-title,#footer-bottom {
+	background: #b60000;
+}
+
+.tag-title:before {
+	border-color: #b60000 transparent #b60000 transparent;
+}
+.plus, .minus, .button1, .blog-title .comment-count, .blog-title-single .comment-count, #footer-bottom, .tag-title {
+background: #b60000;
+}

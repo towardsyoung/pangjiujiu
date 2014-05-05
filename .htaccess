@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+#城市站主页
+RewriteCond %{HTTP_HOST}    ^www.pangjiujiu.com$ [NC]
+RewriteRule ^$              index.php?_mod=Index&_dir=index [L,NC]
+RewriteRule ^activity(\/)?$              index.php?_mod=ActivityList&_dir=activity [L,NC]
+RewriteRule ^about(\/)?$                 index.php?_mod=Static&_dir=statics&_act=about [L,NC]
+RewriteRule ^activity(\/)?$              index.php?_mod=ActivityList&_dir=activity [L,NC]
+RewriteRule ^(.+)\/(\d)+\.html$              index.php?_mod=ActivityDetail&_dir=activity [L,NC]
+
+RewriteRule ^admin(\/)?$              index.php?_mod=Login&_dir=admin [L,NC]
+RewriteRule ^admin\/(\w+)\/$                 index.php?_mod=$1&_dir=admin [L,NC]
+RewriteRule ^admin\/classify\/add.php$       index.php?_mod=classify&_dir=admin [L,NC]
+RewriteRule ^admin\/(\w+)\/(\w+)(\/)?$              index.php?_mod=$1&_act=$2&_dir=admin&%{QUERY_STRING} [L,NC]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
